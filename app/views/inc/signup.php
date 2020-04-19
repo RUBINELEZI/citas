@@ -37,7 +37,7 @@
             </div>
         <div class="signin-image">
             <figure><img src="<?php URL ?>img/login/signup-image.jpg" alt="sing up image"></figure>
-            <a href="<?php URL ?>" class="signup-image-link">I am already member</a>
+            <a href="<?php echo URL ?>" class="signup-image-link">I am already member</a>
         </div>
 
     </div>
