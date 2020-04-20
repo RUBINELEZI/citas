@@ -3,10 +3,11 @@
 
     <div class="signup-content">
             <div class="signup-image">
-                <figure><img src="<?php echo URL; ?>img/login/signin-image.jpg" alt="sing up image"></figure>
+                <figure><img src="<?php URL ?>img/login/signin-image.jpg" alt="sing up image"></figure>
                 <a href="signup" class="signup-image-link">Create an account</a>
             </div>
 
+           
             <div class="signin-form">
                 <h2 class="form-title">Sign in</h2>
                 <form method="POST" class="register-form" id="login-form">
