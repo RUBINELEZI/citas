@@ -1,6 +1,6 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="<?php URL ?>">Cit-as</a>
+    <a class="navbar-brand" href="<?php echo URL ?>">Cit-as</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,7 +23,7 @@
                 <a class="nav-link" href="<?php echo URL ?>">Log In <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="signup">Register</a>
+                <a class="nav-link" href="users/sign_up">Register</a>
             </li>
         </ul>
     </div>
