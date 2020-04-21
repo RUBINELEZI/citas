@@ -3,7 +3,7 @@
 
     <div class="signup-content">
             <div class="signup-image">
-                <figure><img src="<?php URL ?>img/login/signin-image.jpg" alt="sing up image"></figure>
+                <figure><img src="<?php echo URL ?>img/login/signin-image.jpg" alt="sing up image"></figure>
                 <a href="users/sign_up" class="signup-image-link">Create an account</a>
             </div>
 
@@ -13,11 +13,15 @@
                 <form method="POST" class="register-form" id="login-form">
                     <div class="form-group">
                         <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                        <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                        <input type="text" name="your_name" id="your_name" placeholder="Your Name"
+                               class="<?php echo (!empty($data['email_err'])) ? 'is-invalid' : '' ?> " value="<?php echo $data['email'] ?>" />
+                        <span class="invalid-feedback"><?php echo $data['email_err'] ?></span>
                     </div>
                     <div class="form-group">
                         <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                        <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                        <input type="password" name="your_pass" id="your_pass" placeholder="Password" 
+                               class="<?php echo (!empty($data['password_err'])) ? 'is-invalid' : '' ?> " value="<?php echo $data['password'] ?>" />
+                        <span class="invalid-feedback"><?php echo $data['password_err'] ?></span>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />

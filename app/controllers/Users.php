@@ -32,4 +32,21 @@ class Users extends Controller
             $this->view('inc/signup', $data);
         }
     }
+
+    public function log_in(){
+        //check for post
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                //procced with form
+            }else{
+                $data = [
+                    'email' => '',
+                    'password' => '',
+
+                    'email_err' => '',
+                    'password_err' => '',
+                ];
+    
+                $this->view('inc/login', $data);
+            }
+        }
 }
