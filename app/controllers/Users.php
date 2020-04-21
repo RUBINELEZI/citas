@@ -9,8 +9,20 @@ class Users extends Controller
     }
 
     public function index(){
-        //should be there in case nothing is loaded
-    }
+        //check for post
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                //procced with form
+            }else{
+                $data = [
+                    'email' => '',
+                    'password' => '',
+                    'email_err' => '',
+                    'password_err' => '',
+                ];
+    
+                $this->view('home', $data);
+            }
+        }
 
     public function sign_up(){
     //check for post
@@ -22,7 +34,6 @@ class Users extends Controller
                 'email' => '',
                 'password' => '',
                 'confirm_pass' => '',
-
                 'name_err' => '',
                 'email_err' => '',
                 'password_err' => '',
@@ -33,20 +44,5 @@ class Users extends Controller
         }
     }
 
-    public function log_in(){
-        //check for post
-            if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                //procced with form
-            }else{
-                $data = [
-                    'email' => '',
-                    'password' => '',
-
-                    'email_err' => '',
-                    'password_err' => '',
-                ];
     
-                $this->view('home', $data);
-            }
-        }
 }
