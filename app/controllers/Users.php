@@ -8,6 +8,10 @@ class Users extends Controller
         
     }
 
+    public function index(){
+        //should be there in case nothing is loaded
+    }
+
     public function sign_up(){
     //check for post
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
