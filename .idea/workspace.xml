@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c3dbba8-9462-4532-bdd0-df9ef9985fce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/inc/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/inc/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/inc/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/html5" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -71,6 +71,8 @@
       <workItem from="1587037053528" duration="7228000" />
       <workItem from="1587344020076" duration="747000" />
       <workItem from="1587316901283" duration="694000" />
+      <workItem from="1587326584895" duration="24000" />
+      <workItem from="1587382011835" duration="47000" />
     </task>
     <servers />
   </component>
@@ -86,10 +88,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="735" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1587052238930" />
-    <state x="546" y="395" key="FileChooserDialogImpl" timestamp="1586543219210">
+    <state x="546" y="395" key="FileChooserDialogImpl" timestamp="1587382057654">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="546" y="395" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1586543219210" />
+    <state x="546" y="395" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1587382057654" />
     <state x="887" y="388" key="NewPhpClassDialog" timestamp="1587051536021">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
