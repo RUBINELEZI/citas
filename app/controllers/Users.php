@@ -46,7 +46,7 @@ class Users extends Controller
                     'password_err' => '',
                 ];
     
-                $this->view('inc/login', $data);
+                $this->view('home', $data);
             }
         }
 }
