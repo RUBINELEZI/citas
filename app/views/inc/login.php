@@ -4,7 +4,7 @@
     <div class="signup-content">
             <div class="signup-image">
                 <figure><img src="<?php echo URL ?>img/login/signin-image.jpg" alt="sing up image"></figure>
-                <a href="users/sign_up" class="signup-image-link">Create an account</a>
+                <a href="<?php echo URL ?>users/sign_up" class="signup-image-link">Create an account</a>
             </div>
 
            
