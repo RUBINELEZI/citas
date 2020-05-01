@@ -5,7 +5,7 @@ class Users extends Controller
 {
     public function __construct()
     {
-        
+        $this->userModel = $this->model('User');;
     }
 
     public function index(){
@@ -25,6 +25,10 @@ class Users extends Controller
                 // VALIDATE EMAIL    
                 if(empty($data['email'])){
                     $data['email_err'] = 'Please add username or email';
+                }else{
+                    if ($this->userModel->validateUserEmail($data['email'])){
+                        $data['email_err'] = 'Email does not exist';
+                    }
                 }
                 
                  // VALIDATE PASSWORD   

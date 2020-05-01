@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c3dbba8-9462-4532-bdd0-df9ef9985fce" name="Default Changelist" comment="">
+    <list default="true" id="5c3dbba8-9462-4532-bdd0-df9ef9985fce" name="Default Changelist" comment="commit nga phpstorm">
+      <change afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/inc/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libraries/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Model.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,29 +77,42 @@
       <workItem from="1587316901283" duration="694000" />
       <workItem from="1587326584895" duration="24000" />
       <workItem from="1587382011835" duration="47000" />
+      <workItem from="1588363057987" duration="1936000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit nga phpstorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit nga phpstorm" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="689" y="373" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586979704774">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="689" y="373" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1586979704774" />
+    <state x="708" y="290" key="#com.intellij.ide.util.MemberChooser" timestamp="1588363183235">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="708" y="290" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1588363183235" />
     <state x="735" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587052238930">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="735" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1587052238930" />
+    <state x="585" y="173" key="CommitChangelistDialog2" timestamp="1588364861699">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="585" y="173" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1588364861699" />
     <state x="546" y="395" key="FileChooserDialogImpl" timestamp="1587382057654">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="546" y="395" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1587382057654" />
-    <state x="887" y="388" key="NewPhpClassDialog" timestamp="1587051536021">
+    <state x="887" y="388" key="NewPhpClassDialog" timestamp="1588363144634">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="887" y="388" key="NewPhpClassDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1587051536021" />
+    <state x="887" y="388" key="NewPhpClassDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588363144634" />
     <state x="822" y="498" key="NewPhpFileDialog" timestamp="1587037231577">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

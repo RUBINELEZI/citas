@@ -1,9 +1,9 @@
 <?php
 //define db connection
 define('DB_HOST', 'localhost');
-define('DB_USER', 'YOUR_USER');
-define('DB_PASS', 'YOUR_PASSWORD');
-define('DB_NAME', 'YOUR_DBNAME');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'citas');
 
 //define app root
 define('APPROOT', dirname(dirname(__FILE__)));
