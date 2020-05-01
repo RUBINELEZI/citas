@@ -32,7 +32,7 @@
                         <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
                         <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" 
                         class="<?php echo (!empty($data['confirm_pass_err'])) ? 'is-invalid' : '' ?>" value="<?php echo $data['confirm_pass'] ?>" />
-                        <span class="invalid-feedback"><?php echo $data['confrim_pass_err'] ?></span>
+                        <span class="invalid-feedback"><?php echo $data['confirm_pass_err'] ?></span>
                     </div>
                     
                     <div class="form-group form-button">

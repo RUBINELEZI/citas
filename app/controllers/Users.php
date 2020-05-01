@@ -30,7 +30,7 @@ class Users extends Controller
                  // VALIDATE PASSWORD   
                  if(empty($data['password'])){
                     $data['password_err'] = 'Please add correct password';
-                }elseif(strlen($data['password']) < 6 ){
+                }elseif(strlen($data['password']) < 6){
                     $data['password_err'] = 'Password should have at least 6 characters.';
                 }
 
@@ -69,7 +69,6 @@ class Users extends Controller
                 'email_err' => '',
                 'password_err' => '',
                 'confirm_pass_err' => '',
-               
             ];
 
              // VALIDATE NAME    
@@ -86,16 +85,16 @@ class Users extends Controller
              // VALIDATE PASSWORD   
              if(empty($data['password'])){
                 $data['password_err'] = 'Please add password';
-            }elseif(strlen($data['password']) < 6 ){
+            }if(strlen($data['password']) < 6 ){
                 $data['password_err'] = 'Password should have at least 6 characters';
             }
 
             //VALIDATE CONFIRM PASSSWORD
-            if($data['password'] != $data['confirm_pass_err']){
+            if($data['password'] != $data['confirm_pass']){
                 $data['confirm_pass_err'] = 'Passwords did not match';
             }
 
-            if(empty($data['email_err']) && empty($data['password_err'] &&  empty($data['name_err']) && empty($data['confirm_pass_err']))){
+            if(empty($data['email_err']) && empty($data['password_err']) &&  empty($data['name_err']) && empty($data['confirm_pass_err'])){
                 die('sucess');
             }else{
                 $this->view('inc/signup', $data);
