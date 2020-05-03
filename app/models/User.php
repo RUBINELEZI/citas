@@ -7,18 +7,20 @@ class User
 
     public function __construct()
     {
-        $this->db = new Database();
+        $this->db = new Database;
     }
 
-    public function validateUserEmail($email){
-        $this->db->query('SELECT * FROM users WHERE email =  :email');
-        $this->db->bind(':email',$email);
-        $this->db->singleResult();
+    // Find user by email
+    public function findUserByEmail($email){
+        $this->db->query('SELECT * FROM users WHERE email = :email');
+        $this->db->bind(':email', $email);
 
-        //check to see if it exists
-        if ($this->db->rowCount() > 0){
+        $row = $this->db->single();
+
+        // Check row
+        if($this->db->rowCount() > 0){
             return true;
-        }else{
+        } else {
             return false;
         }
     }
