@@ -27,6 +27,12 @@ class Users extends Controller
                 // VALIDATE EMAIL    
                 if(empty($data['email'])){
                     $data['email_err'] = 'Please add username or email';
+                }else{
+                    if ($this->userModel->findUserByName(trim($data['email'])) xor $this->userModel->findUserByEmail(trim($data['email']))){
+
+                    }else{
+                        $data['email_err'] = 'Username or email are not correct';
+                    }
                 }
                 
                  // VALIDATE PASSWORD   
@@ -76,7 +82,13 @@ class Users extends Controller
              // VALIDATE NAME    
              if(empty($data['name'])){
                 $data['name_err'] = 'Please add username.';
-            }
+            }else {
+                 // Check email
+                 if($this->userModel->findUserByName($data['name'])){
+                     $data['name_err'] = 'Username is already taken';
+
+                 }
+             }
             
 
             // VALIDATE EMAIL    
@@ -85,7 +97,7 @@ class Users extends Controller
             }else {
                 // Check email
                 if($this->userModel->findUserByEmail($data['email'])){
-                    $data['email_err'] = 'Email is already taken';
+                    $data['email_err'] = 'This email address is already registered';
 
                 }
             }
@@ -103,7 +115,16 @@ class Users extends Controller
             }
 
             if(empty($data['email_err']) && empty($data['password_err']) &&  empty($data['name_err']) && empty($data['confirm_pass_err'])){
-                die('sucess');
+                // Validated
+                // Hash the password
+                $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+
+                //REGISTER
+                if($this->userModel->register($data)){
+                    header('location: ' . URL . '/Users');
+                }else{
+                    die('Something went wrong');
+                }
             }else{
                 $this->view('inc/signup', $data);
             }
