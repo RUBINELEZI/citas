@@ -53,4 +53,20 @@ class User
         }
     }
 
+    public function findUserByPass($data){
+        $this->db->query('SELECT * FROM users WHERE name = :name XOR email = :email AND password =:password');
+        $this->db->bind(':name', $data['name']);
+        $this->db->bind(':email', $data['email']);
+        $this->db->bind(':password', $data['password']);
+
+        $row = $this->db->single();
+
+        // Check row
+        if($this->db->rowCount() > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

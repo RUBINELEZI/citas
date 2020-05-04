@@ -40,7 +40,13 @@ class Users extends Controller
                     $data['password_err'] = 'Please add correct password';
                 }elseif(strlen($data['password']) < 6){
                     $data['password_err'] = 'Password should have at least 6 characters.';
-                }
+                }else{
+                     if ($this->userModel->findUserByPass($data['password'])){
+
+                     }else{
+                         $data['password_err'] = 'Wrong password for';
+                     }
+                 }
 
                 if(empty($data['email_err']) && empty($data['password_err'])){
                     die('sucess');
@@ -121,7 +127,8 @@ class Users extends Controller
 
                 //REGISTER
                 if($this->userModel->register($data)){
-                    header('location: ' . URL . '/Users');
+                    redirect('Users');
+                    flash('register_success', 'You are now registered and can login');
                 }else{
                     die('Something went wrong');
                 }

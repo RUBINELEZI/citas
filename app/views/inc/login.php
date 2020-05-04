@@ -10,6 +10,7 @@
            
             <div class="signin-form">
                 <h2 class="form-title">Sign in</h2>
+                <?php echo flash('register_success')?>
                 <form method="POST" class="register-form" id="login-form">
                     <div class="form-group">
                         <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
