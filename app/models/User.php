@@ -53,17 +53,18 @@ class User
         }
     }
 
-    public function findUserByPass($data){
-        $this->db->query('SELECT * FROM users WHERE name = :name XOR email = :email AND password =:password');
-        $this->db->bind(':name', $data['name']);
-        $this->db->bind(':email', $data['email']);
-        $this->db->bind(':password', $data['password']);
+    public function validateLoginPass($email, $name,  $password){
+        $this->db->query('SELECT * FROM users WHERE email = :email OR name = :name');
+        $this->db->bind(':email', $email);
+        $this->db->bind(':name', $name);
+
 
         $row = $this->db->single();
+        $hashedPass =  $row->password;
 
-        // Check row
-        if($this->db->rowCount() > 0){
-            return true;
+
+        if(password_verify($password , $hashedPass)){
+            return $row;
         } else {
             return false;
         }

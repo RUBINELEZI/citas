@@ -11,7 +11,7 @@ class Users extends Controller
     }
 
     public function index(){
-        //check for post
+        //Login controller
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 //procced with form
                 //sanitize the data
@@ -37,19 +37,21 @@ class Users extends Controller
                 
                  // VALIDATE PASSWORD   
                  if(empty($data['password'])){
-                    $data['password_err'] = 'Please add correct password';
+                    $data['password_err'] = 'Please add a password';
                 }elseif(strlen($data['password']) < 6){
                     $data['password_err'] = 'Password should have at least 6 characters.';
-                }else{
-                     if ($this->userModel->findUserByPass($data['password'])){
-
-                     }else{
-                         $data['password_err'] = 'Wrong password for';
-                     }
-                 }
+                }
 
                 if(empty($data['email_err']) && empty($data['password_err'])){
-                    die('sucess');
+                    //check password
+                    $logedinUser = $this->userModel->validateLoginPass($data['email'], $data['email'] , $data['password']);
+
+                    if($logedinUser){
+                        die('SUCCESS');
+                    }else{
+                        $data['password_err'] = 'Incorrect password';
+                        $this->view('home', $data);
+                    }
                 }else{
                     $this->view('home', $data);
                 }

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c3dbba8-9462-4532-bdd0-df9ef9985fce" name="Default Changelist" comment="commit nga phpstorm">
-      <change afterPath="$PROJECT_DIR$/app/helpers/session_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/url_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/inc/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/inc/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
       <workItem from="1588418732620" duration="623000" />
       <workItem from="1588516987374" duration="10685000" />
       <workItem from="1588591546153" duration="1669000" />
-      <workItem from="1588617011868" duration="1444000" />
+      <workItem from="1588617011868" duration="4857000" />
     </task>
     <servers />
   </component>
@@ -129,6 +125,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="603" y="253" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1586971319629" />
+    <state x="616" y="270" key="run.anything.popup" timestamp="1588621881680">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1588621881680" />
     <state x="677" y="284" width="672" height="678" key="search.everywhere.popup" timestamp="1588526882093">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
