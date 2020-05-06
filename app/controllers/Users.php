@@ -47,7 +47,8 @@ class Users extends Controller
                     $logedinUser = $this->userModel->validateLoginPass($data['email'], $data['email'] , $data['password']);
 
                     if($logedinUser){
-                        die('SUCCESS');
+                        $this->userSession($logedinUser);
+
                     }else{
                         $data['password_err'] = 'Incorrect password';
                         $this->view('home', $data);
@@ -153,5 +154,21 @@ class Users extends Controller
         }
     }
 
-    
+    public function userSession($user){
+        $_SESSION['user_id'] = $user->id;
+        $_SESSION['user_name'] = $user->name;
+        $_SESSION['user_email'] = $user->email;
+
+        redirect('Posts');
+    }
+
+    public function logout(){
+        unset($_SESSION['user_id']);
+        unset($_SESSION['user_name']);
+        unset($_SESSION['user_email']);
+        session_destroy();
+
+        redirect('Users');
+    }
+
 }
