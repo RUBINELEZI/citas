@@ -7,6 +7,10 @@ class Users extends Controller
 
     public function __construct()
     {
+        if (isLogedIn()){
+            redirect('Posts');
+        }
+
         $this->userModel = $this->model('User');
     }
 
