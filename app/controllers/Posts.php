@@ -12,6 +12,7 @@ class Posts extends Controller
         }
 
         $this->postModel = $this->model('Post');
+        $this->userModel = $this->model('User');
     }
 
     public function index(){
@@ -30,10 +31,13 @@ class Posts extends Controller
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
             $data = [
-                'title' => $_POST['title'],
-                'post' =>  $_POST['post'],
+                'title' => trim($_POST['title']),
+                'post' =>  trim($_POST['post']),
+                'user_id' => $_SESSION['user_id'],
+                'price' => trim($_POST['price']),
                 'title_err' => '',
                 'post_err' => '',
+                'price_err' => '',
             ];
 
             // Validate title
@@ -47,7 +51,11 @@ class Posts extends Controller
             }
 
             if(empty($data['title_err'] || $data['post_err'])){
-                die('success');
+               if ($this->postModel->addPost($data)){
+                   flash('addedPost','Post added');
+                   redirect('Posts');
+               }
+                redirect('Posts');
             }else{
                 $this->view('posts/add', $data);
             }
@@ -62,5 +70,17 @@ class Posts extends Controller
             $this->view('posts/add', $data);
         }
 
+    }
+
+    public function show($id){
+        $post = $this->postModel->getPostById($id);
+        $user = $this->userModel->getUserById($post->user_id);
+
+        $data = [
+            'post' => $post,
+            'user' => $user,
+        ];
+
+        $this->view('posts/showPost', $data);
     }
 }

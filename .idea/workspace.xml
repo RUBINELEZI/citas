@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c3dbba8-9462-4532-bdd0-df9ef9985fce" name="Default Changelist" comment="commit nga phpstorm">
-      <change afterPath="$PROJECT_DIR$/app/models/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/Profiles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/showPost.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/profile/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/url_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/url_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/postsV.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/postsV.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/special/headerS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/special/headerS.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +90,8 @@
       <workItem from="1588617011868" duration="4857000" />
       <workItem from="1588788847234" duration="7623000" />
       <workItem from="1588853389222" duration="7049000" />
+      <workItem from="1588930589042" duration="9003000" />
+      <workItem from="1588947873183" duration="6627000" />
     </task>
     <servers />
   </component>
@@ -120,22 +123,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="546" y="395" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1587382057654" />
-    <state x="887" y="388" key="NewPhpClassDialog" timestamp="1588880199072">
+    <state x="887" y="388" key="NewPhpClassDialog" timestamp="1588954373660">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="887" y="388" key="NewPhpClassDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588880199072" />
-    <state x="822" y="498" key="NewPhpFileDialog" timestamp="1588883654426">
+    <state x="887" y="388" key="NewPhpClassDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588954373660" />
+    <state x="822" y="498" key="NewPhpFileDialog" timestamp="1588954355224">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="822" y="498" key="NewPhpFileDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588883654426" />
+    <state x="822" y="498" key="NewPhpFileDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588954355224" />
     <state x="603" y="253" key="SettingsEditor" timestamp="1586971319629">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="603" y="253" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1586971319629" />
-    <state x="616" y="270" key="run.anything.popup" timestamp="1588621881680">
+    <state x="616" y="270" key="run.anything.popup" timestamp="1588948776717">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1588621881680" />
+    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1588948776717" />
     <state x="677" y="284" width="672" height="678" key="search.everywhere.popup" timestamp="1588526882093">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

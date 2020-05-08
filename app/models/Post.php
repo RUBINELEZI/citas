@@ -26,4 +26,25 @@ class Post
 
         return $results;
     }
+
+    public function addPost($data){
+        $this->db->query('INSERT INTO posts (title,post,user_id) VALUES (:title, :post,:user_id)');
+        $this->db->bind(':title', $data['title']);
+        $this->db->bind(':post', $data['post']);
+        $this->db->bind(':user_id', $data['user_id']);
+
+        if ($this->db->execute()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function getPostById($id){
+        $this->db->query('SELECT * FROM posts WHERE id = :id');
+        $this->db->bind(':id' , $id);
+        $row = $this->db->single();
+
+        return $row;
+    }
 }
