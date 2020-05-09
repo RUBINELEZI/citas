@@ -19,14 +19,14 @@
 <?php foreach ($data['posts'] as $posts ) : ?>
 
     <div class="card mb-3">
-        <div class="row no-gutters">
-            <div class="col-auto">
-                <img src="<?php echo $posts->img_url ?>" height="300" width="300" class="img-fluid" alt="">
+        <div class="row ">
+            <div class="col-4" style="margin: 0;padding-right: 0; position: relative;top: 50%">
+                <img src="<?php echo $posts->img_url ?>" class="img-fluid" alt="">
             </div>
-            <div class="col">
+            <div class="col-8" style="margin: 0;padding: 0">
                 <div class="card-block px-2">
-                    <h4 class="card-title"><?php echo $posts->title ?></h4>
-                    <p class="card-text"><?php echo $posts->post; ?></p>
+                    <a href="<?php echo URL ?>posts/show/<?php echo $posts->postId?>" class="text-dark"><h4 class="card-title"><?php echo $posts->title ?></h4></a>
+                    <p class="card-text" style=" height: 50px;overflow: hidden;text-overflow: ellipsis;"><?php echo $posts->post; ?></p>
                     <a href="<?php echo URL ?>posts/show/<?php echo $posts->postId?>" class="btn btn-primary">Show More</a>
                 </div>
             </div>

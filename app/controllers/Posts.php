@@ -73,7 +73,7 @@ class Posts extends Controller
                 //check to see filet type
                 if (in_array($fileActualExtension,$allowed)){
                     if ($fileError === 0){
-                        if ($fileSize < 2000000){
+                        if ($fileSize < 20000000){
 
                             if (move_uploaded_file($fileTmpLocation, $fileDestination)){
                                 redirect("Posts");
@@ -172,7 +172,7 @@ class Posts extends Controller
                 //check to see filet type
                 if (in_array($fileActualExtension,$allowed)){
                     if ($fileError === 0){
-                        if ($fileSize < 2000000){
+                        if ($fileSize < 20000000){
 
                             if (move_uploaded_file($fileTmpLocation, $fileDestination)){
                                 redirect("Posts");

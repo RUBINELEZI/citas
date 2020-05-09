@@ -23,6 +23,7 @@
                 <span class="invalid-feedback"><?php echo $data['post_err']; ?></span>
             </div>
             <div class="form-group">
+                <img src="<?php echo $data['post_err']; ?>" alt="">
                 <label for="title">Price: <sup>*</sup></label>
                 <input type="text" name="price" class="w-50 form-control form-control-lg <?php echo (!empty($data['price_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['price']; ?>">
                 <span class="invalid-feedback"><?php echo $data['price_err']; ?></span>
