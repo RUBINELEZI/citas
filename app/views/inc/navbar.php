@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <?php if (isset($_SESSION['user_id'])) : ?>
-    <a class="navbar-brand" href="<?php echo URL ?>Posts">Cit-as</a>
+    <a class="navbar-brand" href="<?php echo URL ?>Posts">Frenksion-Gaz</a>
     <?php else: ?>
-    <a class="navbar-brand" href="<?php echo URL ?>users/index">Cit-as</a>
+    <a class="navbar-brand" href="<?php echo URL ?>users/index">Frenksion-Gaz</a>
     <?php endif  ?>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,6 +39,9 @@
 
         <ul class="navbar-nav pull-right mr-5">
         <?php if (isset($_SESSION['user_id'])) : ?>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Welcome <?php echo $_SESSION['user_name'] ?></a>
+            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo URL ?>users/logout">Log Out<span class="sr-only">(current)</span></a>
             </li>

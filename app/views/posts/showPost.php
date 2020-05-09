@@ -56,7 +56,7 @@
 
                 <div class="card" style="width: 100%">
                     <img src="https://images.freeimages.com/images/small-previews/43a/car-part-tbi-1412303.jpg" class="card-img-top" alt="image">
-                    <div class="card-body w-12321">
+                    <div class="card-body">
                         <h5 class="card-title"><?php echo $data['post']->title ?></h5>
                         <div class="card-footer w-100 text-muted">
                             Writen By: <?php echo $data['user']->name ?> on <?php echo $data['post']->created_at ?>

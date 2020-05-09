@@ -13,6 +13,8 @@
 
 <!--flash massage-->
 <?php echo flash('addedPost')?>
+<?php echo flash('cantEdit')?>
+<?php echo flash('deleted')?>
 
 <?php foreach ($data['posts'] as $posts ) : ?>
 
