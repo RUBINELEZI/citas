@@ -54,8 +54,11 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
 
-                <div class="card" style="width: 100%">
-                    <img src="https://images.freeimages.com/images/small-previews/43a/car-part-tbi-1412303.jpg" class="card-img-top" alt="image">
+
+
+    <div class="card" style="width: 100%">
+                    <img src="<?php echo $data['post']->img_url ?>" height="300" width="300" class="img-fluid" alt="">
+                    <h1><?php echo $data['post']->img_url ?></h1>
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $data['post']->title ?></h5>
                         <div class="card-footer w-100 text-muted">
@@ -69,6 +72,8 @@
                                 <div class="col" >
                                     <a href="<?php echo URL ?>Profiles/<?php echo $data['post']->id ?>" style="width: 30%" class="btn btn-primary w-100">Profile</a>
                                 </div>
+
+                         <?php if(isLogedIn()) :?>
                          <?php if ($data['post']->user_id == $_SESSION['user_id']) : ?>
                                 <form action="<?php echo URL; ?>posts/delete/<?php echo $data['post']->id ?>" method="post" class="col w-30">
                                     <input type="submit" value="Delete" class="btn btn-danger w-100">
@@ -79,6 +84,7 @@
 
                             </div>
                         </div>
+                        <?php endif ?>
                         <?php endif ?>
 
 

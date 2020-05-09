@@ -21,7 +21,7 @@
     <div class="card mb-3">
         <div class="row no-gutters">
             <div class="col-auto">
-                <img src="https://images.freeimages.com/images/small-previews/43a/car-part-tbi-1412303.jpg" class="img-fluid" alt="">
+                <img src="<?php echo $posts->img_url ?>" height="300" width="300" class="img-fluid" alt="">
             </div>
             <div class="col">
                 <div class="card-block px-2">

@@ -28,10 +28,11 @@ class Post
     }
 
     public function addPost($data){
-        $this->db->query('INSERT INTO posts (title,post,user_id) VALUES (:title, :post,:user_id)');
+        $this->db->query('INSERT INTO posts (title,post,user_id,img_url) VALUES (:title, :post,:user_id,:img_url)');
         $this->db->bind(':title', $data['title']);
         $this->db->bind(':post', $data['post']);
         $this->db->bind(':user_id', $data['user_id']);
+        $this->db->bind(':img_url', $data['img_url']);
 
         if ($this->db->execute()){
             return true;
@@ -41,10 +42,11 @@ class Post
     }
 
     public function updatePost($data){
-        $this->db->query('UPDATE posts SET title = :title, post = :post WHERE id = :id');
+        $this->db->query('UPDATE posts SET title = :title, post = :post, img_url = :img_url WHERE id = :id');
         $this->db->bind(':title', $data['title']);
         $this->db->bind(':post', $data['post']);
         $this->db->bind(':id', $data['id']);
+        $this->db->bind(':img_url', $data['img_url']);
 
         if ($this->db->execute()){
             return true;
