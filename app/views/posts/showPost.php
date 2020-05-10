@@ -11,12 +11,38 @@
                 height: 100%;
             }
         }
+        .img-container-background {
+            height: 500px;
+            width: 100%;
+            overflow: hidden;
+            display:block;
+            background: gray;
+            display: table;
+            position: relative;
+        }
+
+        .img-container {
+            height: 500px;
+            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .img-container img {
+            margin: auto;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
     </style>
 
     <div class="mt-4">
         <a href="<?php echo URL; ?>posts" class="btn btn-light"><i class="fa fa-backward "></i> Back</a>
         <div class="row mt-4">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 mb-3">
+            <div class=" col-md-4  mb-3">
                 <div class="well well-sm">
                     <div class="row">
                         <div class="col-12" >
@@ -52,11 +78,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="col-md-8 mb-3">
 
 
-                <div class="card" style="width: 100%">
-                    <img src="<?php echo URL ?><?php echo $data['post']->img_url ?>" height="100%" width="100%" class="img-fluid" alt="qwerfg">
+                <div class="card">
+                    <div class="img-container-background">
+                        <div class="img-container">
+                            <img src="<?php echo URL ?><?php echo $data['post']->img_url ?>" class="img-responsive h-100">
+                        </div>
+                    </div>
+<!--                    <img src="--><?php //echo URL ?><!----><?php //echo $data['post']->img_url ?><!--" width="800" height="600" class="img-fluid" alt="qwerfg">-->
 
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $data['post']->title ?></h5>

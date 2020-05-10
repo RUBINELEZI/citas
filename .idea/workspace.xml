@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c3dbba8-9462-4532-bdd0-df9ef9985fce" name="Default Changelist" comment="commit nga phpstorm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/postsV.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/postsV.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/showPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/showPost.php" afterDir="false" />
     </list>
@@ -46,19 +44,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\php\htdocs\Cit-as\public\vendor" />
-      <recent name="E:\php\htdocs\Cit-as\public\scss" />
-      <recent name="E:\php\htdocs\Cit-as\public\img" />
-      <recent name="E:\php\htdocs\Cit-as\public" />
-      <recent name="E:\php\htdocs\Cit-as\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\php\htdocs\Cit-as\public" />
       <recent name="E:\php\htdocs\Cit-as\public\js" />
       <recent name="E:\php\htdocs\Cit-as\public\img\login" />
       <recent name="E:\php\htdocs\Cit-as\public\css" />
       <recent name="E:\php\htdocs\Cit-as\app\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\php\htdocs\Cit-as\public\vendor" />
+      <recent name="E:\php\htdocs\Cit-as\public\scss" />
+      <recent name="E:\php\htdocs\Cit-as\public\img" />
+      <recent name="E:\php\htdocs\Cit-as\public" />
+      <recent name="E:\php\htdocs\Cit-as\public\css" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -90,6 +88,7 @@
       <workItem from="1588947873183" duration="7228000" />
       <workItem from="1589009507741" duration="1033000" />
       <workItem from="1589013276831" duration="25457000" />
+      <workItem from="1589100543128" duration="5979000" />
     </task>
     <servers />
   </component>
