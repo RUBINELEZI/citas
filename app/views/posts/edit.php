@@ -13,7 +13,7 @@
 
             <div class="form-group">
                 <label for="exampleFormControlFile1">Insert Photo</label>
-                <input type="file" name="file" class="form-control-file <?php echo (!empty($data['img_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['img']; ?>">
+                <input type="file" name="file" class="form-control-file <?php echo (!empty($data['img_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['img_url']; ?>">
                 <span class=".text-danger"><?php echo $data['img_err']; ?></span>
             </div>
 

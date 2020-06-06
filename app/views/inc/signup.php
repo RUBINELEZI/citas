@@ -1,7 +1,7 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
 
-<section class="signup" style="margin-top: 15%;">
+<section class="signup" style="margin-top: 50px">
 
     <div class="signup-content">
 

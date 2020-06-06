@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c3dbba8-9462-4532-bdd0-df9ef9985fce" name="Default Changelist" comment="commit nga phpstorm">
+      <change afterPath="$PROJECT_DIR$/public/css/add/add.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/add/add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/postsV.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/postsV.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/showPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/showPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/special/headerS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/special/headerS.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +92,7 @@
       <workItem from="1588947873183" duration="7228000" />
       <workItem from="1589009507741" duration="1033000" />
       <workItem from="1589013276831" duration="25457000" />
-      <workItem from="1589100543128" duration="5979000" />
+      <workItem from="1589100543128" duration="9690000" />
     </task>
     <servers />
   </component>

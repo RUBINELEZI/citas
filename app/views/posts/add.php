@@ -12,11 +12,13 @@
             </div>
 
 
-            <div class="form-group">
+            <div class="form-group dropzone" id="my-awesome-dropzone">
                 <label for="exampleFormControlFile1">Insert Photo</label>
                 <input type="file" name="file" class="form-control-file <?php echo (!empty($data['img_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['img']; ?>">
                 <span class=".text-danger"><?php echo $data['img_err']; ?></span>
             </div>
+
+
 
 
             <div class="form-group">

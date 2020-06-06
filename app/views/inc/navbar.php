@@ -25,7 +25,7 @@
         <ul class="navbar-nav pull-right mr-5">
         <?php if (isset($_SESSION['user_id'])) : ?>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Welcome <?php echo $_SESSION['user_name'] ?></a>
+                <a class="nav-link" href="<?php echo URL ?>profiles/<?php echo $_SESSION['user_id']?>">Welcome <?php echo $_SESSION['user_name'] ?></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo URL ?>users/logout">Log Out<span class="sr-only">(current)</span></a>

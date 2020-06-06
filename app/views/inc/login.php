@@ -1,10 +1,10 @@
 
-<div  style="margin-top: 15%;">
+<div style="margin-top: 50px">
 
     <div class="signup-content">
             <div class="signup-image">
                 <figure><img src="<?php echo URL ?>img/login/signin-image.jpg" alt="sing up image"></figure>
-                <a href="<?php echo URL ?>users/sign_up" class="signup-image-link">Create an account</a>
+                
             </div>
 
            
@@ -32,12 +32,7 @@
                     </div>
                 </form>
                 <div class="social-login">
-                    <span class="social-label">Or login with</span>
-                    <ul class="socials">
-                        <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                        <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                        <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                    </ul>
+                <a href="<?php echo URL ?>users/sign_up" class="signup-image-link">Rregjistro dyqanin tend.</a>
                 </div>
             </div>
     </div>

@@ -20,6 +20,7 @@ class Post
                               INNER JOIN users
                               ON posts.user_id = users.id
                               ORDER BY posts.created_at DESC 
+                              
                                         ');
 
         $results =  $this->db->resultSet();
@@ -72,5 +73,13 @@ class Post
         }else{
             return false;
         }
+    }
+
+    public function getProfilePostsById($id){
+        $this->db->query('SELECT * FROM posts WHERE user_id = :id ORDER BY posts.created_at DESC ');
+        $this->db->bind(':id' , $id);
+        $row = $this->db->resultSet();
+
+        return $row;
     }
 }
