@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
 
     <a class="navbar-brand" href="<?php echo URL ?>">Frenksion-Gaz</a>
 
